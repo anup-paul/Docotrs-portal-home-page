@@ -3,7 +3,7 @@ import './Contact.css'
 
 const Contact = () => {
     return (
-        <section className="mt-5 contact" >
+        <section className="mt-5 contact mx-5" >
             <div className="container" >
                 <div className="text-center pt-5 pb-5 text-white">
                     <h5 style={{ color: "#1CC7C1" }}><b>CONTACT US</b></h5>
