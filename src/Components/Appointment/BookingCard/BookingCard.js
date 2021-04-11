@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import AppointmentForm from '../AppointmentForm/AppointmentForm';
 
-const BookingCard = ({bookingInfo}) => {
+const BookingCard = ({bookingInfo, date}) => {
     const [modalIsOpen, setIsOpen] = useState(false);
     function openModal() {
         setIsOpen(true);
@@ -18,7 +18,7 @@ const BookingCard = ({bookingInfo}) => {
                 <h6>{bookingInfo.visitingHour}</h6>
                 <p className="text-secondary" >{bookingInfo.totalSpace} Space available </p>
                 <button onClick={openModal}  style={{backgroundColor:"#1cc7c1",color:"white"}} className="btn" >BOOK APPOINTMENT</button>
-                <AppointmentForm modalIsOpen = {modalIsOpen} closeModal={closeModal} appointmentOn = {bookingInfo.subject} ></AppointmentForm>
+                <AppointmentForm modalIsOpen = {modalIsOpen} closeModal={closeModal} appointmentOn = {bookingInfo.subject} date={date} ></AppointmentForm>
             </div>
         </div>
     );

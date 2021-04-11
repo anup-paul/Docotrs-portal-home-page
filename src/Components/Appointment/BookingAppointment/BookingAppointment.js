@@ -49,7 +49,7 @@ const BookingAppointment = ({date}) => {
             <div className="d-flex justify-content-center mt-5 pt-5" >
                 <div className="row w-75 " >
                     {
-                        bookingData.map(data => <BookingCard bookingInfo={data} ></BookingCard>)
+                        bookingData.map(data => <BookingCard bookingInfo={data} date={date} ></BookingCard>)
                     }
                 </div>
             </div>
