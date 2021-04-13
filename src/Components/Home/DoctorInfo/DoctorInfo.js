@@ -6,7 +6,13 @@ const DoctorInfo = ({data}) => {
     return (
         <div className="col-md-4">
             <div className="text-center" >
-                <img  className="img-fluid" src={data.img} alt=""/>
+            <img  className="img-fluid" src={data.img} alt=""/>
+                {/* {
+                    data.image ? <img src = {`data:image/png;base64,${data.image.img}`}/>
+                    :
+                    <img  className="img-fluid" src={`http://localhost:7000/${data.img}`} alt=""/>
+                } */}
+                
                 <h6 className="mt-3 mb-3"><b>{data.name}</b></h6>
                 <div className="d-flex justify-content-center" >
                     <FontAwesomeIcon icon={data.icon} style={{color:"#1CC7C1"}} ></FontAwesomeIcon>

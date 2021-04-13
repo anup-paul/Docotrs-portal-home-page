@@ -15,7 +15,7 @@ const MakeAppoinment = () => {
                             <h5 style={{ color: "#1CC7C1" }}>Appointment</h5>
                             <h1>Make an appointment <br /> today</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quo eligendi voluptate architecto, debitis consectetur?</p>
-                            <button className="btn btn-primary" >Learn more</button>
+                            <button style={{backgroundColor:"#11D0DC"}} className="btn" >Learn more</button>
                         </div>
                     </div>
                 </div>

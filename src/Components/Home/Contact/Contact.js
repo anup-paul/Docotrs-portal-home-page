@@ -17,7 +17,7 @@ const Contact = () => {
                             <input type="text" className="form-control mt-3" placeholder="Subject" name="" id="" />
                             <textarea type="text" className="form-control mt-3" cols="30" rows="10" placeholder="Your Message" name="" id="" />
                             <div className="text-center">
-                                <button className="btn btn-primary mt-3" >Submit</button>
+                                <button style={{backgroundColor:"#11D0DC"}} className="btn mt-3" >Submit</button>
                             </div>
 
                         </form>

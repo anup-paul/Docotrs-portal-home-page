@@ -20,25 +20,27 @@ const AddDoctors = () => {
     }
 
     const handleSubmit = (event) => {
-          console.log('clicked',file,info.name,info.email)
+        event.preventDefault();
+        //   console.log('clicked',file,info.name,info.email);
         const formData = new FormData()
-        formData.append('file', file);
-        formData.append('name', info.name);
-        formData.append('email', info.email);
+        formData.append('file', file)
+        formData.append('name', info.name)
+        formData.append('email', info.email)
+
 
         fetch('http://localhost:7000/addADoctor', {
             method: 'POST',
             body: formData
         })
-            .then(response => response.json())
+            .then(res => res.json())
             .then(data => {
                 console.log(data)
             })
-            .catch(error => {
-                console.error(error)
-            })
-           
-            event.preventDefault()    
+        .catch(err => console.log(err))
+
+        // axios.post('http://localhost:7000/addADoctor',formData)
+        // .then(data => console.log(data))
+        // .catch(err => console.log(err))
     }
 
 

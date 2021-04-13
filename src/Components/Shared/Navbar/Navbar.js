@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -12,22 +13,22 @@ const Navbar = () => {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link me-5 active" aria-current="page" href="#">Home</a>
+          <Link to="/" class="nav-link me-5 active" aria-current="page"  >Home</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link me-5 active" aria-current="page" href="#">About</a>
+          <Link to="appointment" class="nav-link me-5 active" aria-current="page"  >Appointment</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link me-5 active" aria-current="page" href="#">Dental service</a>
+          <Link to="dashboard" class="nav-link me-5 active" aria-current="page"  >DashBoard</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link me-5 active text-white" aria-current="page" href="#">Reviews</a>
+          <Link class="nav-link me-5 active text-white" aria-current="page"  >Reviews</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link me-5 active text-white" aria-current="page" href="#">Blog</a>
+          <Link class="nav-link me-5 active text-white" aria-current="page"  >Blog</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link me-5 active text-white" aria-current="page" href="#">Contract Us</a>
+          <Link class="nav-link me-5 active text-white" aria-current="page"  >Contract Us</Link>
         </li>
       </ul>
     </div>

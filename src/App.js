@@ -24,7 +24,7 @@ function App() {
   return (
 
     <div>
-      <h2> Email: {loggedInUser.email}</h2>
+      {/* <h2> Email: {loggedInUser.email}</h2> */}
       <UserContext.Provider value={[loggedInUser, setLoggedInUser]} >
 
         <Router>
@@ -35,9 +35,9 @@ function App() {
             <Route path="/appointment">
               <Appointment></Appointment>
             </Route>
-            <Route path="/dashboard/appointment">
+            <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>
-            </Route>
+            </PrivateRoute>
             <PrivateRoute path="/addDoctors" >
                 <AddDoctors></AddDoctors>
             </PrivateRoute>
